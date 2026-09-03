@@ -1,0 +1,44 @@
+name: Update reservoir data
+
+on:
+  schedule:
+    # 東京都水道局のページは利根川・荒川水系が0時、多摩川水系が7時に値を更新するため、
+    # その少し後(JST 8:10 / 15:10 = UTC 23:10前日 / 06:10)に取得する。
+    - cron: "10 23 * * *"
+    - cron: "10 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run scraper
+        run: npm run scrape
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/reservoir.json; then
+            echo "No changes in data/reservoir.json"
+            exit 0
+          fi
+          git add data/reservoir.json
+          git commit -m "chore: update reservoir data"
+          git push
