@@ -2,6 +2,8 @@
 
 東京都水道局「[貯水量情報](https://www.waterworks.metro.tokyo.lg.jp/suigen/suigen)」（利根川水系・荒川水系・多摩川水系）と、神奈川県企業庁「[かながわの水がめ](https://kanagawa-dam.jp/web_data/saves_rainfall_sagami.html)」（相模川水系）をもとに、東京都民目線でダムの貯水状況を可視化する静的サイトです。東京都は相模川水系からも川崎市の長沢浄水場経由で分水を受けているため、参考として含めています。
 
+https://kskwes.github.io/kanto-suigen/
+
 ## 構成
 
 - `index.html` / `styles.css` / `app.js` … 表示用の静的サイト本体。`data/reservoir.json` を読み込んで描画する。トップの「東京の水はどこから来ている？」は、東京都水道局が公表する水系別供給割合（80% / 17% / 3%、固定値）に、各水系の現在の貯水状況を重ねた構成比バー。
