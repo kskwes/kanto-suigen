@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>関東の水源モニター</title>
+<meta name="description" content="東京都水道局の貯水量情報をもとに、東京都民目線で利根川・荒川・多摩川・相模川水系の水源（ダム貯水量）を可視化するサイトです。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="page-header">
+  <div class="page-header-inner">
+    <h1>関東の水源モニター</h1>
+    <p class="subtitle">東京都水道局「貯水量情報」や神奈川県のデータをもとに、東京都民目線でダムの貯水状況を可視化しています。</p>
+  </div>
+</header>
+
+<main>
+  <section class="update-bar" aria-live="polite">
+    <div class="update-bar-text">
+      <span id="source-date">データ取得中…</span>
+      <span id="fetched-at" class="muted"></span>
+    </div>
+    <button id="refresh-btn" type="button">更新する</button>
+  </section>
+
+  <section id="error-banner" class="error-banner" hidden></section>
+
+  <section id="supply-share" aria-label="東京の水源の内訳"></section>
+
+  <section id="overview" class="kpi-row" aria-label="東京都全体のサマリー"></section>
+
+  <section class="legend-section" aria-label="危機度の見方">
+    <h2 class="section-title">危機度の見方</h2>
+    <p class="legend-note">貯水率（有効容量に対する現在の貯水量の割合）をもとにした、このサイト独自の目安です。取水制限など公式の判断基準とは異なります。</p>
+    <ul class="status-legend">
+      <li class="status-good"><span class="status-icon">◎</span>順調（80%以上）</li>
+      <li class="status-warning"><span class="status-icon">▲</span>やや注意（50〜80%）</li>
+      <li class="status-serious"><span class="status-icon">■</span>警戒（30〜50%）</li>
+      <li class="status-critical"><span class="status-icon">✕</span>危機的（30%未満）</li>
+    </ul>
+  </section>
+
+  <section class="area-section" aria-label="お住まいのエリアとの関係">
+    <h2 class="section-title">自分の住むエリアはどの水系？（目安）</h2>
+    <p class="legend-note">
+      東京都水道局は複数の水系の水をブレンドして給水しているため境界は厳密ではありませんが、主にどの水系に支えられているかの目安です。
+      正確な給水区域は <a href="https://www.waterworks.metro.tokyo.lg.jp/suigen/map" target="_blank" rel="noopener">東京の水道水源と浄水場別給水区域（東京都水道局）</a> をご参照ください。
+    </p>
+    <div class="data-table-wrap">
+      <table class="data-table area-table">
+        <thead>
+          <tr>
+            <th>水系</th>
+            <th>供給割合</th>
+            <th>主なエリア（目安）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>利根川・荒川水系</td>
+            <td>約80%</td>
+            <td>23区の大部分・多摩地域の一部など、東京の給水の中心</td>
+          </tr>
+          <tr>
+            <td>多摩川水系</td>
+            <td>約17%</td>
+            <td>多摩地域を中心に、23区西部の一部</td>
+          </tr>
+          <tr>
+            <td>相模川水系等（神奈川県）</td>
+            <td>約3%</td>
+            <td>世田谷区南東部・目黒区・大田区西部（長沢浄水場の給水区域、約50万人分）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="systems" class="systems" aria-label="水系別の貯水状況"></section>
+
+  <section class="disclaimer">
+    <h2 class="section-title">データについて</h2>
+    <ul>
+      <li>出典（利根川・荒川・多摩川水系）: <a href="https://www.waterworks.metro.tokyo.lg.jp/suigen/suigen" target="_blank" rel="noopener">東京都水道局「貯水量情報」</a>（日次更新）</li>
+      <li>出典（相模川水系・神奈川県）: <a href="https://kanagawa-dam.jp/web_data/saves_rainfall_sagami.html" target="_blank" rel="noopener">神奈川県企業庁「かながわの水がめ」</a>（東京都水道局の管轄外のデータで、相模湖・津久井湖・宮ヶ瀬湖の合計値。有効容量は貯水率からの近似値で、まれに取得できないことがあります）</li>
+      <li>「東京の水はどこから来ている？」の水系別供給割合は <a href="https://www.waterworks.metro.tokyo.lg.jp/suigen/antei/02" target="_blank" rel="noopener">東京都水道局「東京の水道水源」</a> に基づく固定値です。</li>
+      <li>本サイトはGitHub Actionsが上記ページを定期的に取得し、その結果を静的ファイルとして表示しています。リアルタイムの値ではありません。</li>
+      <li>「更新する」ボタンは、最後にActionsが取得したデータの再読み込みです。ページ側で最新の値を都度取得しているわけではありません。</li>
+      <li>危機度の区分は本サイト独自の目安であり、東京都・国が公表する取水制限等の基準とは異なります。</li>
+      <li>より詳しい・高頻度な情報は <a href="https://www.ktr.mlit.go.jp/tonedamu/teikyo/realtime2/realtimeindex2.html" target="_blank" rel="noopener">利根川水系のリアルタイム貯水量情報（国土交通省）</a> をご参照ください。</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <p>本サイトは個人が作成した非公式のものです。データは東京都水道局に帰属します。</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

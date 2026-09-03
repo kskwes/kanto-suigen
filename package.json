@@ -1,0 +1,13 @@
+{
+  "name": "kanto-suigen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "関東（東京都水道局データ）の水源貯水量を可視化する静的サイト",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}
