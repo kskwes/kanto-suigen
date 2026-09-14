@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-09-14T01:01:55.292Z",
-  "sourceLabel": "令和8年9月11日(金曜日)",
-  "sourceDate": "2026-09-11",
+  "fetchedAt": "2026-09-14T12:35:53.268Z",
+  "sourceLabel": "令和8年9月14日(月曜日)",
+  "sourceDate": "2026-09-14",
   "sourceUrl": "https://www.waterworks.metro.tokyo.lg.jp/suigen/suigen",
   "supplyShare": {
     "sourceUrl": "https://www.waterworks.metro.tokyo.lg.jp/suigen/antei/02",
@@ -41,80 +41,80 @@
           "capacityTotal": 11550,
           "capacityEffective": 11550,
           "capacityRaw": "11,550(11,550)",
-          "storage": 10778.3,
-          "storageRatePercent": 93.3,
-          "dailyChange": 115.6
+          "storage": 10676.6,
+          "storageRatePercent": 92.4,
+          "dailyChange": -114
         },
         {
           "name": "奈良俣ダム",
           "capacityTotal": 8500,
           "capacityEffective": 7200,
           "capacityRaw": "8,500(7,200)",
-          "storage": 7360.8,
-          "storageRatePercent": 102.2,
-          "dailyChange": -5.3
+          "storage": 7255.9,
+          "storageRatePercent": 100.8,
+          "dailyChange": -50.7
         },
         {
           "name": "藤原ダム",
           "capacityTotal": 3101,
           "capacityEffective": 1469,
           "capacityRaw": "3,101(1,469)",
-          "storage": 1286.5,
-          "storageRatePercent": 87.6,
-          "dailyChange": -74.9
+          "storage": 1339.3,
+          "storageRatePercent": 91.2,
+          "dailyChange": -8.4
         },
         {
           "name": "相俣ダム",
           "capacityTotal": 2000,
           "capacityEffective": 1060,
           "capacityRaw": "2,000(1,060)",
-          "storage": 1056.7,
-          "storageRatePercent": 99.7,
-          "dailyChange": 16.8
+          "storage": 1000.3,
+          "storageRatePercent": 94.4,
+          "dailyChange": -29
         },
         {
           "name": "薗原ダム",
           "capacityTotal": 1322,
           "capacityEffective": 300,
           "capacityRaw": "1,322(300)",
-          "storage": 379.6,
-          "storageRatePercent": 126.5,
-          "dailyChange": -15.5
+          "storage": 369.6,
+          "storageRatePercent": 123.2,
+          "dailyChange": -16.6
         },
         {
           "name": "八ッ場ダム",
           "capacityTotal": 9000,
           "capacityEffective": 2500,
           "capacityRaw": "9,000(2,500)",
-          "storage": 2407.5,
-          "storageRatePercent": 96.3,
-          "dailyChange": -4.9
+          "storage": 2422.3,
+          "storageRatePercent": 96.9,
+          "dailyChange": -21.4
         },
         {
           "name": "下久保ダム",
           "capacityTotal": 12000,
           "capacityEffective": 8500,
           "capacityRaw": "12,000(8,500)",
-          "storage": 8342.2,
-          "storageRatePercent": 98.1,
-          "dailyChange": 26.5
+          "storage": 8471.4,
+          "storageRatePercent": 99.7,
+          "dailyChange": 17.1
         },
         {
           "name": "草木ダム",
           "capacityTotal": 5050,
           "capacityEffective": 3050,
           "capacityRaw": "5,050(3,050)",
-          "storage": 3076.3,
-          "storageRatePercent": 100.9,
-          "dailyChange": -23.6
+          "storage": 3068.4,
+          "storageRatePercent": 100.6,
+          "dailyChange": -5.2
         },
         {
           "name": "渡良瀬貯水池",
           "capacityTotal": 2640,
           "capacityEffective": 1220,
           "capacityRaw": "2,640(1,220)",
-          "storage": 1114.1,
-          "storageRatePercent": 91.3,
+          "storage": 1131.1,
+          "storageRatePercent": 92.7,
           "dailyChange": 0
         }
       ],
@@ -123,18 +123,18 @@
         "capacityTotal": 55163,
         "capacityEffective": 36849,
         "capacityRaw": "55,163(36,849)",
-        "storage": 35802,
-        "storageRatePercent": 97.2,
-        "dailyChange": 34.7
+        "storage": 35735,
+        "storageRatePercent": 97,
+        "dailyChange": -228.2
       },
       "comparison": {
         "lastYear": {
-          "storage": 15651.8,
-          "storageRatePercent": 42.5
+          "storage": 16952.7,
+          "storageRatePercent": 46
         },
         "twoYearsAgo": {
-          "storage": 32930.9,
-          "storageRatePercent": 89.4
+          "storage": 33380,
+          "storageRatePercent": 90.6
         }
       },
       "external": false
@@ -148,36 +148,36 @@
           "capacityTotal": 5600,
           "capacityEffective": 3300,
           "capacityRaw": "5,600(3,300)",
-          "storage": 3446.1,
-          "storageRatePercent": 104.4,
-          "dailyChange": -9.2
+          "storage": 3351.7,
+          "storageRatePercent": 101.6,
+          "dailyChange": -24.5
         },
         {
           "name": "荒川貯水池",
           "capacityTotal": 1020,
           "capacityEffective": 760,
           "capacityRaw": "1,020(760)",
-          "storage": 802.9,
-          "storageRatePercent": 105.6,
-          "dailyChange": 2.2
+          "storage": 809.7,
+          "storageRatePercent": 106.5,
+          "dailyChange": 0
         },
         {
           "name": "滝沢ダム",
           "capacityTotal": 5800,
           "capacityEffective": 2500,
           "capacityRaw": "5,800(2,500)",
-          "storage": 2465.3,
-          "storageRatePercent": 98.6,
-          "dailyChange": -18.2
+          "storage": 2479,
+          "storageRatePercent": 99.2,
+          "dailyChange": -10.9
         },
         {
           "name": "二瀬ダム",
           "capacityTotal": 2000,
           "capacityEffective": 1600,
           "capacityRaw": "2,000(0～1,600)",
-          "storage": 45,
-          "storageRatePercent": 26.6,
-          "dailyChange": -27.1
+          "storage": 73,
+          "storageRatePercent": 25.1,
+          "dailyChange": 31.4
         }
       ],
       "total": {
@@ -185,14 +185,14 @@
         "capacityTotal": 14420,
         "capacityEffective": 8160,
         "capacityRaw": "14,420(6,560～8,160)",
-        "storage": 6759.3,
-        "storageRatePercent": 100.5,
-        "dailyChange": -52.3
+        "storage": 6713.4,
+        "storageRatePercent": 98,
+        "dailyChange": -4
       },
       "comparison": {
         "lastYear": {
-          "storage": 5492.6,
-          "storageRatePercent": 81.6
+          "storage": 5561.5,
+          "storageRatePercent": 81.2
         },
         "twoYearsAgo": {
           "storage": null,
@@ -210,18 +210,18 @@
           "capacityTotal": 18540,
           "capacityEffective": 18540,
           "capacityRaw": "18,540(18,540)",
-          "storage": 14672.4,
-          "storageRatePercent": 79.1,
-          "dailyChange": 530.8
+          "storage": 15679.7,
+          "storageRatePercent": 84.6,
+          "dailyChange": 234.9
         },
         {
           "name": "村山・山口貯水池",
           "capacityTotal": 3435,
           "capacityEffective": 3258,
           "capacityRaw": "3,435(3,258)",
-          "storage": 2588.3,
-          "storageRatePercent": 79.4,
-          "dailyChange": 25.7
+          "storage": 2559.5,
+          "storageRatePercent": 78.5,
+          "dailyChange": -18.5
         }
       ],
       "total": {
@@ -229,18 +229,18 @@
         "capacityTotal": 21975,
         "capacityEffective": 21798,
         "capacityRaw": "21,975(21,798)",
-        "storage": 17260.7,
-        "storageRatePercent": 79.2,
-        "dailyChange": 556.5
+        "storage": 18239.2,
+        "storageRatePercent": 83.7,
+        "dailyChange": 216.4
       },
       "comparison": {
         "lastYear": {
-          "storage": 13863.1,
-          "storageRatePercent": 63.6
+          "storage": 14218.2,
+          "storageRatePercent": 65.2
         },
         "twoYearsAgo": {
-          "storage": 17509,
-          "storageRatePercent": 80.3
+          "storage": 17241.9,
+          "storageRatePercent": 79.1
         }
       },
       "external": false
