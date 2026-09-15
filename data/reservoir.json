@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-14T12:35:53.268Z",
+  "fetchedAt": "2026-09-15T01:26:15.764Z",
   "sourceLabel": "令和8年9月14日(月曜日)",
   "sourceDate": "2026-09-14",
   "sourceUrl": "https://www.waterworks.metro.tokyo.lg.jp/suigen/suigen",
@@ -247,7 +247,7 @@
     },
     {
       "name": "相模川水系（神奈川県）",
-      "observedAt": "2026-09-13現在",
+      "observedAt": "2026-09-14現在",
       "external": true,
       "source": "神奈川県企業庁「かながわの水がめ」",
       "sourceUrl": "https://kanagawa-dam.jp/web_data/saves_rainfall_sagami.html",
@@ -256,24 +256,24 @@
       "total": {
         "name": "以上合計",
         "capacityTotal": null,
-        "capacityEffective": 22061.1,
+        "capacityEffective": 22266.5,
         "capacityRaw": null,
-        "storage": 21178.7,
-        "storageRatePercent": 96,
-        "dailyChange": 208
+        "storage": 21153.2,
+        "storageRatePercent": 95,
+        "dailyChange": -25.5
       },
       "comparison": {
         "lastYear": {
-          "storage": 18399.7,
-          "storageRatePercent": 83.4
+          "storage": 18834.7,
+          "storageRatePercent": 84.6
         },
         "twoYearsAgo": {
-          "storage": 21295.9,
-          "storageRatePercent": 96.5
+          "storage": 21291,
+          "storageRatePercent": 95.6
         },
         "average": {
-          "storage": 20306.5,
-          "storageRatePercent": 92
+          "storage": 20361.7,
+          "storageRatePercent": 91.4
         }
       }
     }
